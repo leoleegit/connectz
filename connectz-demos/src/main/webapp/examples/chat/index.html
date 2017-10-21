@@ -1,0 +1,50 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta charset="utf-8"></meta>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+    <meta name="renderer" content="webkit"></meta>
+
+    <title>ConnectZ Chat Example</title>
+
+    <meta name="keywords" content="ConnectZ"></meta>
+    <meta name="description" content="ConnectZ"></meta>
+    <link rel="shortcut icon" href="http://connectz.cn/favicon.png"></link>
+    <link rel="icon" href="http://connectz.cn/favicon.png"></link>
+    
+    <link rel="stylesheet" href="http://connectz.cn/css/googleapis.css"></link>
+    <link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+  <ul class="pages">
+    <li class="chat page">
+      <div class="chatArea"> 
+        <select multiple class="form-control  userlist">
+		</select>
+        <ul class="messages">
+       
+        </ul>
+      </div>
+      <input class="inputMessage" placeholder="Type here..."/>
+    </li>
+    <li class="login page">
+      <div class="form">
+        <h3 class="title">What's your nickname?</h3>
+        <input class="usernameInput" type="text" maxlength="14" />
+      </div>
+    </li>
+  </ul>
+  
+ 
+   <script type="text/x-handlebars-template" id="waterfall-msg">
+	 <li class="message"><span class="username" style="color: {{color}};">{{nickname}}</span><span class="messageBody">{{msg}}</span></li>
+  </script>
+  <script type="text/x-handlebars-template" id="waterfall-log">
+	<li class="log" style="display: list-item;">{{msg}}</li>
+  </script>
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="http://connectz.cn/js/connectz.js"></script>
+  <script src="./handlebars.js"></script>
+  <script src="./chat.js"></script>
+  
+</body>
+</html>
