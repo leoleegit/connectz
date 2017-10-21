@@ -1,0 +1,59 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.connectz</groupId>
+    <artifactId>connectz</artifactId>
+    <version>1.0-20160909</version>
+  </parent>
+  
+  <artifactId>connectz-util</artifactId>
+  <packaging>jar</packaging>
+  <name>connectz-util Maven app</name>
+  <properties>  
+     <jetty.version>8.0.4.v20111024</jetty.version>
+  </properties> 
+  <build>
+    <finalName>connectz-util-${project.version}</finalName>
+  </build>
+  
+   <dependencies>
+    <dependency>
+      <groupId>commons-fileupload</groupId>
+      <artifactId>commons-fileupload</artifactId>
+       <scope>provided</scope>
+      <version>1.2.1</version>
+    </dependency>
+    <dependency>
+	     <groupId>org.apache.commons</groupId>
+  		<artifactId>commons-lang3</artifactId>
+  		<version>3.4</version>
+    </dependency>
+    <dependency>
+       <groupId>commons-io</groupId>
+       <artifactId>commons-io</artifactId>
+       <version>2.5</version>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.jetty</groupId>
+      <artifactId>jetty-server</artifactId>
+      <version>${jetty.version}</version>
+      <scope>provided</scope>
+    </dependency>
+     <dependency>
+      <groupId>org.eclipse.jetty</groupId>
+      <artifactId>jetty-servlet</artifactId>
+      <version>${jetty.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.jetty</groupId>
+      <artifactId>jetty-webapp</artifactId>
+      <version>${jetty.version}</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+  
+</project>
